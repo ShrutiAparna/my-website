@@ -5,6 +5,8 @@ import { profile, education, affiliations, skills } from '@/data/profile'
 
 export const metadata: Metadata = { title: 'About' }
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
+
 export default function AboutPage() {
   return (
     <div className="page-container">
@@ -18,7 +20,7 @@ export default function AboutPage() {
           {/* Replace public/images/profile.jpg with your own photo — see README. */}
           <div className="relative w-full aspect-[4/5] bg-stone-200 dark:bg-stone-900 overflow-hidden">
             <Image
-              src={profile.photo}
+              src={`${base}${profile.photo}`}
               alt={profile.name}
               fill
               className="object-cover"

@@ -6,6 +6,8 @@ import Image from 'next/image'
 import { ScrollArrow } from './ScrollArrow'
 import { profile } from '@/data/profile'
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
+
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
@@ -19,7 +21,7 @@ export function Hero() {
       <motion.div className="absolute inset-0 scale-110" style={{ y: bgY }}>
         <div className="absolute inset-0 transition-opacity duration-700 dark:opacity-0">
           <Image
-            src="/images/hero-light.jpg"
+            src={`${base}/images/hero-light.jpg`}
             alt=""
             fill
             priority
@@ -29,7 +31,7 @@ export function Hero() {
         </div>
         <div className="absolute inset-0 opacity-0 transition-opacity duration-700 dark:opacity-100">
           <Image
-            src="/images/hero-dark.jpg"
+            src={`${base}/images/hero-dark.jpg`}
             alt=""
             fill
             priority
