@@ -30,18 +30,18 @@ export const achievements: Achievement[] = [
     organization: 'IIT Delhi',
     description: 'Received the Best Project Award among more than 100 submissions.',
   },
-  {
-    id: 'jee',
-    year: 2022,
-    title: 'JEE Advanced — AIR 6565',
-    organization: 'Joint Entrance Examination',
-    description: 'Secured AIR 6565 in JEE Advanced and ranked in the top 1 percentile in JEE Main.',
-  },
-  {
-    id: 'cbse-merit',
-    year: 2021,
-    title: 'Certificate of Merit — CBSE',
-    organization: 'Central Board of Secondary Education',
-    description: 'Awarded for ranking among the top 0.1% of students, scoring 100% marks in Physics.',
-  },
+  // {
+  //   id: 'jee',
+  //   year: 2022,
+  //   title: 'JEE Advanced — AIR 6565',
+  //   organization: 'Joint Entrance Examination',
+  //   description: 'Secured AIR 6565 in JEE Advanced and ranked in the top 1 percentile in JEE Main.',
+  // },
+  // {
+  //   id: 'cbse-merit',
+  //   year: 2021,
+  //   title: 'Certificate of Merit — CBSE',
+  //   organization: 'Central Board of Secondary Education',
+  //   description: 'Awarded for ranking among the top 0.1% of students, scoring 100% marks in Physics.',
+  // },
 ]
