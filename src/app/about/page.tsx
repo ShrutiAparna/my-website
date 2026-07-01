@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { FadeIn } from '@/components/FadeIn'
-import { profile, education, affiliations, skills } from '@/data/profile'
+import { profile, education, affiliations } from '@/data/profile'
 
 export const metadata: Metadata = { title: 'About' }
 
@@ -52,7 +52,6 @@ export default function AboutPage() {
                       {edu.institution}
                     </p>
                     <p className="font-sans text-stone-600 dark:text-stone-400 mt-1">{edu.degree}</p>
-                    <p className="font-sans text-sm text-stone-500 dark:text-stone-500 mt-1">{edu.detail}</p>
                   </div>
                 </div>
               ))}
@@ -74,23 +73,6 @@ export default function AboutPage() {
             </div>
           </FadeIn>
 
-          <FadeIn delay={0.2}>
-            <p className="section-label">Technical Skills</p>
-            <div className="space-y-3">
-              <p className="font-sans text-stone-600 dark:text-stone-400">
-                <span className="text-stone-400 dark:text-stone-600">Languages — </span>
-                {skills.languages.join(' · ')}
-              </p>
-              <p className="font-sans text-stone-600 dark:text-stone-400">
-                <span className="text-stone-400 dark:text-stone-600">AI / ML — </span>
-                {skills.ml.join(' · ')}
-              </p>
-              <p className="font-sans text-stone-600 dark:text-stone-400">
-                <span className="text-stone-400 dark:text-stone-600">Tools — </span>
-                {skills.tools.join(' · ')}
-              </p>
-            </div>
-          </FadeIn>
         </div>
       </div>
     </div>
