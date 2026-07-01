@@ -8,6 +8,8 @@ import { Menu, X } from 'lucide-react'
 import { ThemeToggle } from './ThemeToggle'
 import { profile } from '@/data/profile'
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
+
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
@@ -15,7 +17,7 @@ const navLinks = [
   { href: '/projects', label: 'Projects' },
   { href: '/publications', label: 'Publications' },
   { href: '/achievements', label: 'Achievements' },
-  { href: profile.cv, label: 'CV', external: true },
+  { href: `${base}${profile.cv}`, label: 'CV', external: true },
   { href: '/contact', label: 'Contact' },
 ]
 
