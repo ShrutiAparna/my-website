@@ -43,16 +43,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div>
-                <p className="section-label">Current Focus</p>
-                <p className="font-serif text-xl text-stone-800 dark:text-stone-200">{profile.degree}</p>
-                <p className="font-sans text-stone-500 dark:text-stone-500 text-sm mt-1">
-                  {profile.institution}
-                </p>
-                <p className="font-sans text-stone-500 dark:text-stone-500 text-sm">{profile.year}</p>
-              </div>
-
-              {profile.quote && (
+{profile.quote && (
                 <blockquote className="border-l-2 border-stone-300 dark:border-stone-700 pl-5">
                   <p className="font-serif text-lg text-stone-600 dark:text-stone-400 italic leading-relaxed">
                     {profile.quote}

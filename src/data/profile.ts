@@ -43,6 +43,11 @@ export const education = [
 
 export const affiliations = [
   {
+    name: 'Columbia University',
+    role: 'Research Assistant',
+    period: 'Jun 2026 – Present',
+  },
+  {
     name: 'Centre for Applied Research in Electronics (CARE), IIT Delhi',
     role: 'Research Assistant',
     period: 'Aug 2025 – Present',
